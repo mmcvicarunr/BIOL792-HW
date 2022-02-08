@@ -1,0 +1,50 @@
+﻿mollyelizabeth@Mollys-MacBook ~ % cd desktop
+mollyelizabeth@Mollys-MacBook desktop % cd BIOL792DSII
+mollyelizabeth@Mollys-MacBook BIOL792DSII % cd BIOL792-HW # moved to file created when repo was created
+mollyelizabeth@Mollys-MacBook BIOL792-HW % git add hw1dsII.txt # adding homework file to staging area
+mollyelizabeth@Mollys-MacBook BIOL792-HW % git status # checking to make sure it was added
+On branch main
+Your branch is up to date with 'origin/main'.
+
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   hw1dsII.txt
+
+
+mollyelizabeth@Mollys-MacBook BIOL792-HW % git commit -m "hw 1 file for julie" # committing file to git
+[main 744dae3] hw 1 file for julie
+ Committer: Molly McVicar <mollyelizabeth@Mollys-MacBook.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+
+After doing this, you may fix the identity used for this commit with:
+
+
+    git commit --amend --reset-author
+
+
+ 1 file changed, 273 insertions(+)
+ create mode 100644 hw1dsII.txt
+mollyelizabeth@Mollys-MacBook BIOL792-HW % git status # making sure it was removed from staging area
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+
+nothing to commit, working tree clean
+mollyelizabeth@Mollys-MacBook BIOL792-HW % git push origin main # pushing file to github repo
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 3.89 KiB | 3.89 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/mmcvicarunr/BIOL792-HW
+   e408769..744dae3  main -> main
