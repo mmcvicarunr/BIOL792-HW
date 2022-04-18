@@ -1,0 +1,16 @@
+What month are which species most commonly captured in? 
+SELECT  month, COUNT (*)
+FROM surveys
+GROUP BY species_id
+ORDER BY COUNT(species_id)
+
+What is the most abundant genus captured overall?
+SELECT genus, COUNT (*)
+FROM species 
+GROUP BY genus
+ORDER BY COUNT(genus)
+
+Where is the most diversity found?
+SELECT plot_id, COUNT (*)
+FROM plots
+GROUP BY species_id
